@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<button class="button">
+		<span>
+			Подпишитесь на канал Быть Программистом
+		</span>>
+	</button>
+
+	<script>
+		Document.querySelector('.button').
+			onmousemove = (e)=>{
+				const x = e.pageX - e.target.
+					offsetLeft
+				const y = e.pageY - e.target.offsetTop
+
+				e.target.style.setProperty('--x', x + "px")
+				e.target.style.setProperty('--y', y + "px")
+			}
+	</script>
+</body>
+</html>
